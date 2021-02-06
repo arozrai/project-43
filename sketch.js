@@ -3,6 +3,9 @@ var min
 var sec
 
 function setup() {
+  hr = hour()
+  min = minute()
+  sec = second()
   createCanvas(800,400)
   createSprite(260, 200, 10, 280);
   createSprite(540, 200, 10, 280);
