@@ -4,9 +4,6 @@ var sec
 
 function setup() {
   createCanvas(800,400)
-  hr = hour()
-  min = minute()
-  sec = second()
   createSprite(260, 200, 10, 280);
   createSprite(540, 200, 10, 280);
   createSprite(400, 60, 280, 10);
@@ -14,6 +11,9 @@ function setup() {
 }
 
 function draw() {
+  hr = hour()
+  min = minute()
+  sec = second()
   background(255,255,255);  
   angleMode(DEGREES)
   hrAngle = map(hr, 0, 12, 0, 360)
